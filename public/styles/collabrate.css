@@ -1,0 +1,145 @@
+html, body {
+	padding: 0px;
+	margin: 0px;
+}
+div[user] {
+	width: 175px;
+	height: 35px;
+
+	float: left;
+
+	margin: 5px;
+	padding: 5px;
+
+	background-color: #FFFF77;
+	cursor: pointer;
+}
+
+div[user] div.header span[purpose=user-name]{
+	width: 90%;
+	float: left;
+}
+
+div[user] div.header span[action=dismiss]{
+	display: none;
+}
+
+div[user] div.body {
+	display: none;
+}
+
+div[user] div.small-body {
+	display: block;
+}
+
+div[user].big {
+	width: 98%;
+	height: 98%;
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+div[user].big div.header span[purpose=user-name]{
+	font-size: 36px;
+	width: 96%;
+	padding-left: 15px; 
+	float: left;
+}
+
+div[user].big div.header span[action=dismiss]{
+	font-size: 36px;
+
+	width: 5px;
+	float: left;
+
+	display: inline;
+
+	cursor: pointer;
+}
+
+div[user].big div.body {
+	display: block;
+}
+
+div[user].big div.small-body {
+	display: none;
+}
+
+div[user].big div.body div.left{
+	width: 70%;
+	float: left;
+	background-color: #77FF77;
+
+	padding: 10px;
+	margin: 10px;
+
+	min-height: 500px;
+}
+
+div[user].big div.body div.left a:link, 
+div[user].big div.body div.left a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+div[user].big div.body div.left a:hover, 
+div[user].big div.body div.left a:active {
+    background-color: red;
+}
+
+div[user].big div.body div.left a[disabled]:link, 
+div[user].big div.body div.left a[disabled]:visited {
+	background-color: #EEEEEE;
+}
+
+div[user].big div.body div.left a[disabled]:hover, 
+div[user].big div.body div.left a[disabled]:active {
+	background-color: #EEEEEE;
+}
+
+div[user].big div.body div.left p{
+	width: 100%;
+}
+
+div[user].big div.body div.left [purpose=editor]{
+	padding: 0px;
+
+	width: 100%;
+	min-height: 400px;
+}
+
+div[user].big div.body div.right{
+	width: 23%;
+	float: left;
+	background-color: #FF7777;
+
+	padding: 10px;
+	margin: 10px;
+
+	min-height: 500px;
+}
+
+div[user].big div.body div.right ul{
+	padding: 0px;
+
+	width: 100%;
+	min-height: 425px;
+
+	overflow: auto;
+}
+
+div[user].big div.body div.right textarea{
+	width: 98%;
+}
+
+li {
+	list-style-type: none;
+}
+
+

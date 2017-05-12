@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Collaborate</title>
+		<link type="text/css" rel="stylesheet" href="styles/collabrate.css" />
+	</head>
+	<body>
+		 <script type="text/javascript" src="lib/jquery.js"></script>
+		 <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.5/ace.js"></script>
+		 <script type="text/javascript" src="js/collabrate.js"></script>
+		 
+		 <!--Template code for creating window for each user-->
+		 <script id="userTemplate" type="text/template">		
+	 		<div class="header">
+		 		<span purpose="user-name"></span>
+		 		<span action="dismiss">X</span>
+	 		</div>
+	 		<div class="body">
+		 		<div class="left">
+		 			<div purpose="editor"></div>
+		 			<p>Controlled by: <span purpose="controlled-by"></span></p>
+		 			<a href="#" action="control">Control</a> 
+		 			<a href="#" action="release" disabled="disabled">Release</a> 
+		 		</div>
+		 		<div class="right">
+			 		<ul purpose="chat"></ul>
+			 		<textarea purpose="chat"></textarea>
+		 		</div>
+	 		</div>
+	 		<div class="small-body">
+	 			Last Activity : <span purpose="activity"></span>
+	 		<div>
+		 </script>
+	</body>
+</html>
+
+
